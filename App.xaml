@@ -1,0 +1,128 @@
+﻿<Application x:Class="Belet.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:Belet"
+             StartupUri="Views/LogginPassword.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <materialDesign:BundledTheme BaseTheme="Light" PrimaryColor="Blue" SecondaryColor="Lime" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+                <ResourceDictionary>
+                    <SolidColorBrush x:Key="Brush1" Color="#FF377DFF"/>
+                    <SolidColorBrush x:Key="Brush2" Color="#FFBDC5D1"/>
+                    <SolidColorBrush x:Key="BrushWhite" Color="White"/>
+                    <Pen x:Key="Pen1"  Brush="{StaticResource Brush2}" Thickness="3" StartLineCap="Round" EndLineCap="Round" DashCap="Round" LineJoin="Round" MiterLimit="10"/>
+                    <Pen x:Key="Pen2"  Brush="{StaticResource BrushWhite}" Thickness="3" StartLineCap="Flat" EndLineCap="Flat" DashCap="Flat" LineJoin="Miter" MiterLimit="10"/>
+                    <Pen x:Key="Pen3"  Brush="{StaticResource Brush1}" Thickness="3" StartLineCap="Flat" EndLineCap="Flat" DashCap="Flat" LineJoin="Miter" MiterLimit="10"/>
+                </ResourceDictionary>
+
+                <ResourceDictionary >
+                    <SolidColorBrush x:Key="Brush1" Color="#FF3170E5"/>
+                    <Pen x:Key="Pen10"  Brush="{StaticResource Brush1}" Thickness="4" StartLineCap="Round" EndLineCap="Round" DashCap="Round" LineJoin="Miter" MiterLimit="10"/>
+                </ResourceDictionary>
+
+                <ResourceDictionary >
+                    <SolidColorBrush x:Key="Brush1" Color="#FF71869D"/>
+                    <SolidColorBrush x:Key="BrushGray" Color="Gray"/>
+
+                </ResourceDictionary>
+
+                <ResourceDictionary >
+                    <SolidColorBrush x:Key="Brush1" Color="#FF00DFFC"/>
+                    <SolidColorBrush x:Key="Brush2" Color="#FFFFC107"/>
+                    <SolidColorBrush x:Key="Brush3" Color="#FF3170E5"/>
+                    <SolidColorBrush x:Key="BrushGray" Color="Gray"/>
+                    <Pen x:Key="Pen1"  Brush="{StaticResource Brush1}" Thickness="4" StartLineCap="Flat" EndLineCap="Flat" DashCap="Flat" LineJoin="Miter" MiterLimit="10"/>
+                </ResourceDictionary>
+
+                <ResourceDictionary >
+                    <SolidColorBrush x:Key="Brush1" Color="#FFF4B20C"/>
+                    <SolidColorBrush x:Key="Brush2" Color="#FFFFC107"/>
+                    <SolidColorBrush x:Key="Brush3" Color="#FF377DFF"/>
+                    <SolidColorBrush x:Key="BrushGray" Color="Gray"/>
+                    <SolidColorBrush x:Key="BrushWhite" Color="White"/>
+                    <Pen x:Key="Pen1"  Brush="{StaticResource Brush3}" Thickness="1.73" StartLineCap="Flat" EndLineCap="Flat" DashCap="Flat" LineJoin="Miter" MiterLimit="10"/>
+                </ResourceDictionary>
+
+                <ResourceDictionary >
+                    <SolidColorBrush x:Key="Brush1" Color="#FF377DFF"/>
+                    <SolidColorBrush x:Key="Brush2" Color="#FFBDC5D1"/>
+                    <SolidColorBrush x:Key="BrushWhite" Color="White"/>
+                    <Pen x:Key="Pen1"  Brush="{StaticResource Brush2}" Thickness="3" StartLineCap="Round" EndLineCap="Round" DashCap="Round" LineJoin="Round" MiterLimit="10"/>
+                    <Pen x:Key="Pen2"  Brush="{StaticResource BrushWhite}" Thickness="3" StartLineCap="Flat" EndLineCap="Flat" DashCap="Flat" LineJoin="Miter" MiterLimit="10"/>
+                    <Pen x:Key="Pen3"  Brush="{StaticResource Brush1}" Thickness="3" StartLineCap="Flat" EndLineCap="Flat" DashCap="Flat" LineJoin="Miter" MiterLimit="10"/>
+                </ResourceDictionary>
+
+                <ResourceDictionary >
+                    <SolidColorBrush x:Key="Brush1" Color="#FF377DFF"/>
+                    <SolidColorBrush x:Key="Brush2" Color="#FFBDC5D1"/>
+                    <SolidColorBrush x:Key="BrushWhite" Color="White"/>
+                    <Pen x:Key="Pen1"  Brush="{StaticResource Brush2}" Thickness="3" StartLineCap="Round" EndLineCap="Round" DashCap="Round" LineJoin="Round" MiterLimit="10"/>
+                    <Pen x:Key="Pen2"  Brush="{StaticResource BrushWhite}" Thickness="3" StartLineCap="Flat" EndLineCap="Flat" DashCap="Flat" LineJoin="Miter" MiterLimit="10"/>
+                    <Pen x:Key="Pen3"  Brush="{StaticResource Brush1}" Thickness="3" StartLineCap="Flat" EndLineCap="Flat" DashCap="Flat" LineJoin="Miter" MiterLimit="10"/>
+                </ResourceDictionary>
+
+                <ResourceDictionary>
+                    <SolidColorBrush x:Key="Brush1" Color="#FFBDC5D1"/>
+                    <SolidColorBrush x:Key="Brush2" Color="#FF377DFF"/>
+                    <SolidColorBrush x:Key="BrushWhite" Color="White"/>
+                    <Pen x:Key="Pen1"  Brush="{StaticResource Brush1}" Thickness="3" StartLineCap="Round" EndLineCap="Round" DashCap="Round" LineJoin="Round" MiterLimit="10"/>
+                    <Pen x:Key="Pen2"  Brush="{StaticResource Brush1}" Thickness="3" StartLineCap="Flat" EndLineCap="Flat" DashCap="Flat" LineJoin="Miter" MiterLimit="10"/>
+                    <Pen x:Key="Pen3"  Brush="{StaticResource Brush2}" Thickness="3" StartLineCap="Flat" EndLineCap="Flat" DashCap="Flat" LineJoin="Miter" MiterLimit="10"/>
+                    <Pen x:Key="Pen4"  Brush="{StaticResource Brush2}" Thickness="3" StartLineCap="Round" EndLineCap="Round" DashCap="Round" LineJoin="Round" MiterLimit="10"/>
+                </ResourceDictionary>
+
+                <ResourceDictionary  >
+                    <SolidColorBrush x:Key="Brush1" Color="#FF377DFF"/>
+                    <SolidColorBrush x:Key="Brush2" Color="#FFBDC5D1"/>
+                    <SolidColorBrush x:Key="BrushWhite" Color="White"/>
+                    <Pen x:Key="Pen1"  Brush="{StaticResource Brush2}" Thickness="3" StartLineCap="Round" EndLineCap="Round" DashCap="Round" LineJoin="Round" MiterLimit="10"/>
+                    <Pen x:Key="Pen2"  Brush="{StaticResource Brush1}" Thickness="3" StartLineCap="Round" EndLineCap="Round" DashCap="Round" LineJoin="Round" MiterLimit="10"/>
+                    <Pen x:Key="Pen3"  Brush="{StaticResource Brush1}" Thickness="3" StartLineCap="Flat" EndLineCap="Flat" DashCap="Flat" LineJoin="Miter" MiterLimit="10"/>
+                    <Pen x:Key="Pen4"  Brush="{StaticResource BrushWhite}" Thickness="3" StartLineCap="Round" EndLineCap="Round" DashCap="Round" LineJoin="Round" MiterLimit="10"/>
+                    <Pen x:Key="Pen5"  Brush="{StaticResource BrushWhite}" Thickness="3" StartLineCap="Flat" EndLineCap="Flat" DashCap="Flat" LineJoin="Miter" MiterLimit="10"/>
+                </ResourceDictionary>
+
+            </ResourceDictionary.MergedDictionaries>
+
+            <Style x:Key="textBoxButton" TargetType="Button">
+                <Setter Property="Background" Value="Transparent" />
+                <Setter Property="Foreground" Value="#88878E" />
+                <Setter Property="Width" Value="35" />
+                <Setter Property="Height" Value="35" />
+                <Setter Property="Margin" Value="3 0 0 0" />
+                <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border Background="{TemplateBinding Background}" CornerRadius="50">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background" Value="#e9e9e9" />
+                        <Setter Property="Foreground" Value="White" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+
+            
+
+        </ResourceDictionary>
+
+
+
+
+
+    </Application.Resources>
+</Application>

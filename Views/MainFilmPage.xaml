@@ -1,0 +1,85 @@
+﻿<Window x:Class="Belet.Views.MainFilmPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+         
+             xmlns:MainChoosePageViewModel="clr-namespace:Belet.ViewModels"
+             xmlns:dxmvvm1="clr-namespace:DevExpress.Mvvm.UI;assembly=DevExpress.Xpf.Core.v21.1"
+             xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+             xmlns:dxwuin="http://schemas.devexpress.com/winfx/2008/xaml/windowsui/navigation"
+             xmlns:ViewModels="clr-namespace:Belet.ViewModels" xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+            WindowStartupLocation="CenterScreen" MouseLeftButtonDown="WindowMouseLeftButtonDown"
+          x:Name="Window"
+        xmlns:converters="clr-namespace:Belet.Helper"
+          TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+       
+           xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:PresentationOptions="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+        
+        xmlns:local="clr-namespace:Belet.Views"
+        mc:Ignorable="d"
+        Title="MainFilmPage"
+        Height="500"
+        Width="1000">
+
+    <Window.DataContext>
+        <ViewModels:MainChoosePageViewModel/>
+    </Window.DataContext>
+
+    <Window.Resources>
+
+        <converters:dk_MultiBindingConverter x:Key="MultiBindingConverter" />
+
+
+
+
+        <Image x:Key="Agent"
+               Source="{Binding choosePage.FilmAgent}" Width="500" />
+        <Image x:Key="Beletagts"
+               Source="{Binding choosePage.ASTUPage}" />
+        <Image x:Key="BeletArakesme"
+               Source="{Binding choosePage.ArakesmePage}" />
+        <Image x:Key="beletTuner"
+               Source="{Binding choosePage.TunerPage}" />
+        <Image x:Key="BeletTV"
+               Source="{Binding choosePage.TVbox}"
+               Margin="20" />
+        <Image x:Key="MashaandBear"
+               Source="{Binding choosePage.MashaBear}"/>
+        <Image x:Key="Turkmenteleckom"
+               Source="{Binding choosePage.TelekomPage}" />
+
+    </Window.Resources>
+
+    
+
+   
+
+
+    <Grid  >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Button HorizontalAlignment="Left" Content="Top" Command="{Binding btn_click}" ></Button>
+        <Button HorizontalAlignment="Center" Content="Center"   ></Button>
+        <Button Content="Botton" HorizontalAlignment="Right"  ></Button>
+        <ScrollViewer Grid.Row="1" Name="{Binding myScrollViewer}">
+
+
+
+           
+            <StackPanel>
+                <TextBlock Name="TextBlock" Height="20"></TextBlock>
+                <Rectangle Height="300" Width="100"  Fill="BlanchedAlmond"></Rectangle>
+                <Rectangle Height="300" Width="100"  Fill="Blue"></Rectangle>
+                <Rectangle Height="300" Width="100"  Fill="BlueViolet"></Rectangle>
+                <Rectangle Height="300" Width="100"  Fill="Chartreuse"></Rectangle>
+                <Rectangle Height="300" Width="100"  Fill="Crimson"></Rectangle>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>
