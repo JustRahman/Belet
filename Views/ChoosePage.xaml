@@ -27,11 +27,7 @@
              Width="1300">
 
 
-    <WindowChrome.WindowChrome>
-        <WindowChrome 
-        CaptionHeight="0"
-        ResizeBorderThickness="5" />
-    </WindowChrome.WindowChrome> 
+   
     <Window.DataContext>
         <ViewModels:ChoosePageViewModel/>
     </Window.DataContext>
@@ -103,6 +99,8 @@
             <RowDefinition Height="auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+        
+        
 
 
         <materialDesign:PopupBox Grid.Row="0" HorizontalAlignment="Right" Margin="0 10 20 10" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False" Height="25">

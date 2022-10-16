@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CommonServiceLocator, Version=2.0.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>packages\CommonServiceLocator.2.0.2\lib\net47\CommonServiceLocator.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Data.Desktop.v21.1, Version=21.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.v21.1, Version=21.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.ExpressApp.Security.Xpo.v21.1, Version=21.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -50,6 +53,15 @@
     <Reference Include="DevExpress.Xpf.Core.v21.1.Extensions, Version=21.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Xpo.v21.1, Version=21.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Xpo.v21.1.Extensions, Version=21.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="GalaSoft.MvvmLight, Version=5.4.1.0, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
+      <HintPath>packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras, Version=5.4.1.0, Culture=neutral, PublicKeyToken=669f0b5e8f868abf, processorArchitecture=MSIL">
+      <HintPath>packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.Extras.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Platform, Version=5.4.1.0, Culture=neutral, PublicKeyToken=5f873c45e98af8a1, processorArchitecture=MSIL">
+      <HintPath>packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.Platform.dll</HintPath>
+    </Reference>
     <Reference Include="MaterialDesignColors">
       <HintPath>..\..\BeletFilm\Belet\bin\Debug\MaterialDesignColors.dll</HintPath>
     </Reference>
@@ -62,10 +74,17 @@
     <Reference Include="Microsoft.Xaml.Behaviors">
       <HintPath>..\..\BeletFilm\Belet\bin\Debug\Microsoft.Xaml.Behaviors.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\weather\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Windows" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\MvvmLightLibs.5.4.1.1\lib\net45\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
     <Reference Include="System.Windows.Presentation" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -97,6 +116,29 @@
     <Compile Include="Model\ChoosePageModel.cs" />
     <Compile Include="Model\GineliyenBeletModel.cs" />
     <Compile Include="Model\LogginPasswordModel.cs" />
+    <Compile Include="Model\MainChoosePageModel.cs" />
+    <Compile Include="Model\Media\Converter.cs" />
+    <Compile Include="Model\Media\CountryNameConverter.cs" />
+    <Compile Include="Model\Media\Dat.cs" />
+    <Compile Include="Model\Media\Data.cs" />
+    <Compile Include="Model\Media\FluffyAttributes.cs" />
+    <Compile Include="Model\Media\LanguageNameConverter.cs" />
+    <Compile Include="Model\Media\Media.cs" />
+    <Compile Include="Model\Media\MediaDatum.cs" />
+    <Compile Include="Model\Media\MediaTypeNameConverter.cs" />
+    <Compile Include="Model\Media\Meta.cs" />
+    <Compile Include="Model\Media\NecessaryMedia.cs" />
+    <Compile Include="Model\Media\Pagination.cs" />
+    <Compile Include="Model\Media\ParseStringConverter.cs" />
+    <Compile Include="Model\Media\PurpleAttributes.cs" />
+    <Compile Include="Model\Media\StickyAttributes.cs" />
+    <Compile Include="Model\Media\TblRbCountriesClass.cs" />
+    <Compile Include="Model\Media\TblRbGeners.cs" />
+    <Compile Include="Model\Media\TblRbGenersDatum.cs" />
+    <Compile Include="Model\Media\TblRbMediaDirectorClass.cs" />
+    <Compile Include="Model\Media\TblRbMediaType.cs" />
+    <Compile Include="Model\Media\TentacledAttributes.cs" />
+    <Compile Include="Model\RelayCommand.cs" />
     <Compile Include="Model\StaticsForTheme.cs" />
     <Compile Include="Model\TazelikBeletModel.cs" />
     <Compile Include="Model\TelekomBeletModel.cs" />
@@ -104,6 +146,7 @@
     <Compile Include="Model\TunerBeletModel.cs" />
     <Compile Include="Model\TVBeletModel.cs" />
     <Compile Include="Model\VideoBeletModel.cs" />
+    <Compile Include="TextBlockConverter\EnumarableToTextConverter.cs" />
     <Compile Include="ViewModels\ArakesmeBeletViewModel.cs" />
     <Compile Include="ViewModels\ASTUBeletTazelikViewModel.cs" />
     <Compile Include="ViewModels\ASTUBeletViewModel.cs" />
@@ -116,6 +159,7 @@
     <Compile Include="ViewModels\LogginPageViewModel.cs" />
     <Compile Include="ViewModels\MainChoosePageViewModel.cs" />
     <Compile Include="ViewModels\MainFilmPage.cs" />
+    <Compile Include="ViewModels\MainFilmPageInfoViewModel.cs" />
     <Compile Include="ViewModels\TazelikBeletViewModel.cs" />
     <Compile Include="ViewModels\TelekomBeletTazelikViewModel.cs" />
     <Compile Include="ViewModels\TelekomBeletViewModel.cs" />
@@ -149,11 +193,20 @@
     <Compile Include="Views\GinileyinBelet.xaml.cs">
       <DependentUpon>GinileyinBelet.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\INfo.xaml.cs">
+      <DependentUpon>INfo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\LogginPassword.xaml.cs">
       <DependentUpon>LogginPassword.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\MainFilmInfoPage.xaml.cs">
+      <DependentUpon>MainFilmInfoPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainFilmPage.xaml.cs">
       <DependentUpon>MainFilmPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainFilmPageInfoView.xaml.cs">
+      <DependentUpon>MainFilmPageInfoView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TazelikBelet.xaml.cs">
       <DependentUpon>TazelikBelet.xaml</DependentUpon>
@@ -221,11 +274,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\INfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\LogginPassword.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\MainFilmInfoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\MainFilmPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainFilmPageInfoView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -272,6 +337,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
